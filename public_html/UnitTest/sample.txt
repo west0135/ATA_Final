@@ -1,0 +1,34 @@
+
+data = 
+{
+     method: MtcCourtReservationHelper.safeCreate
+     reservations_per_time_period: 2
+     reservations_per_person: 1
+     date: 2015-04-06
+     start_time: 10:00
+     end_time: 11:00
+     court_id: 5
+     member1_id: 46
+     status: RESERVED
+     notes: Reserved from Web site.
+     court_reservation_id: NULL
+     userid: 46
+     ukey: 5xnQsyVqkouxY
+ }
+ RESPONSE
+ {"status":"SUCCESS","court_reservation_id":"557","RES_STATUS":"SUCCESS","RES_COUNT":0}
+ 
+ 
+data = {
+    method: MtcMemberSecure.create
+    member_id: NULL
+    first_name: Tom
+    last_name: Tester
+    email: tw@test.com
+    membership_category_id: 3
+    userid: 45
+    ukey: O1Dq62aYJFZYK
+}
+
+RESPONSE
+{"status":"SUCCESS","member_id":"92"}
